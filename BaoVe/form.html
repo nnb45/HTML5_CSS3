@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Form dang ki</title>
+  <link rel="stylesheet" href="form.css" />
+</head>
+
+<body>
+  <center>
+    <h2>Form đăng ký</h2>
+    <section class="container">
+      <form id="check-form" action="#">
+        <input id="name" type="text" placeholder="Họ tên" />
+        <p id="errol-name"></p> <br />
+        <input id="email" type="text" placeholder="Email" />
+        <p id="errol-email"></p> <br />
+        <input id="phone" type="text" placeholder="Số điện thoại" />
+        <p id="errol-phone"></p> <br />
+        <!-- <input type="button" onclick="noti();" name="btn" id="sb" value="Đăng ký">
+        <input type="button" onclick="noti();" name="btn" id="reset" value="Nhập lại"> -->
+        <span id="sb">Đăng ký</span>
+        <span id="reset" onclick="remove()">Nhập lại</span>
+      </form>
+    </section>
+  </center>
+  <script src="form.js">
+    function remove(){
+      document.getElementById("check-form").reset();
+    }
+  </script>
+</body>
+
+
+</html>
